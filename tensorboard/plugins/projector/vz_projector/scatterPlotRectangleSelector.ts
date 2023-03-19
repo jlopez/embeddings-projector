@@ -13,9 +13,9 @@ See the License for the specific language governing permissions and
 limitations under the License.
 ==============================================================================*/
 
-const FILL = '#dddddd';
+const FILL = 'var(--grayDD)';
 const FILL_OPACITY = 0.2;
-const STROKE = '#aaaaaa';
+const STROKE = 'var(--grayAA)';
 const STROKE_WIDTH = 2;
 const STROKE_DASHARRAY = '10 5';
 export interface ScatterBoundingBox {

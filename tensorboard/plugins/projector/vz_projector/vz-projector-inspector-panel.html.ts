@@ -41,7 +41,7 @@ export const template = html`
       border-radius: 7px;
       font-size: 13px;
       padding: 10px;
-      background: #e3e3e3;
+      background: var(--grayE3);
     }
 
     .button:last-child {
@@ -74,11 +74,11 @@ export const template = html`
     }
 
     .refresh {
-      background: rgba(255, 255, 255, 0.5);
+      background: var(--whiteAlpha80);
     }
 
     .refresh:hover {
-      background: rgba(255, 255, 255, 0.7);
+      background: var(--whiteAlphaB3);
     }
 
     .generated-image {
@@ -125,7 +125,7 @@ export const template = html`
 
     .nn-list .value,
     .metadata-list .value {
-      color: #666;
+      color: var(--gray66);
       float: right;
       font-weight: 300;
       margin-left: 8px;
@@ -134,7 +134,7 @@ export const template = html`
     .nn-list .bar,
     .metadata-list .bar {
       position: relative;
-      border-top: 1px solid rgba(0, 0, 0, 0.15);
+      border-top: 1px solid var(--blackAlpha26);
       margin: 2px 0;
     }
 
@@ -150,7 +150,7 @@ export const template = html`
       position: absolute;
       top: 0px;
       height: 3px;
-      border-left: 1px solid rgba(0, 0, 0, 0.15);
+      border-left: 1px solid var(--blackAlpha26);
     }
 
     .nn-list .sprite-image,
@@ -191,14 +191,14 @@ export const template = html`
     }
 
     .options a {
-      color: #727272;
+      color: var(--gray72);
       font-size: 13px;
       margin-left: 12px;
       text-decoration: none;
     }
 
     .options a.selected {
-      color: #009efe;
+      color: var(--magritteSky);
     }
 
     .neighbors {
@@ -211,7 +211,7 @@ export const template = html`
 
     .neighbors-options .option-label,
     .distance .option-label {
-      color: #727272;
+      color: var(--gray72);
       margin-right: 2px;
       width: auto;
     }
@@ -238,7 +238,7 @@ export const template = html`
     }
 
     .matches-list .row {
-      border-bottom: 1px solid #ddd;
+      border-bottom: 1px solid var(--grayDD);
       cursor: pointer;
       display: flex;
       font-size: 12px;

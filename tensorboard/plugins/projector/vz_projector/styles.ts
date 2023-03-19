@@ -31,7 +31,7 @@ registerStyleDomModule({
     }
 
     paper-button {
-      background: #e3e3e3;
+      background: var(--grayE3);
       margin-left: 0;
       text-transform: none;
     }
@@ -48,13 +48,13 @@ registerStyleDomModule({
     }
 
     paper-checkbox {
-      --paper-checkbox-checked-color: #880e4f;
+      --paper-checkbox-checked-color: var(--frenchPlum);
     }
 
     paper-toggle-button {
-      --paper-toggle-button-checked-bar-color: #880e4f;
-      --paper-toggle-button-checked-button-color: #880e4f;
-      --paper-toggle-button-checked-ink-color: #880e4f;
+      --paper-toggle-button-checked-bar-color: var(--frenchPlum);
+      --paper-toggle-button-checked-button-color: var(--frenchPlum);
+      --paper-toggle-button-checked-ink-color: var(--frenchPlum);
     }
 
     paper-icon-button {
@@ -62,8 +62,8 @@ registerStyleDomModule({
     }
 
     paper-icon-button[active] {
-      color: white;
-      background-color: #880e4f;
+      color: var(--white);
+      background-color: var(--frenchPlum);
     }
 
     .slider {
@@ -101,7 +101,7 @@ registerStyleDomModule({
     }
 
     .ink-panel h4 {
-      border-bottom: 1px solid #ddd;
+      border-bottom: 1px solid var(--grayDD);
       font-size: 14px;
       font-weight: 500;
       margin: 0;
@@ -110,8 +110,8 @@ registerStyleDomModule({
     }
 
     .ink-panel-header {
-      border-bottom: 1px solid rgba(0, 0, 0, 0.1);
-      border-top: 1px solid rgba(0, 0, 0, 0.1);
+      border-bottom: 1px solid var(--blackAlpha13);
+      border-top: 1px solid var(--blackAlpha13);
       height: 50px;
     }
 
@@ -150,7 +150,7 @@ registerStyleDomModule({
     }
 
     .ink-tab-group .projection-tab {
-      color: rgba(0, 0, 0, 0.5);
+      color: var(--blackAlpha80);
       cursor: pointer;
       font-weight: 300;
       line-height: 49px;
@@ -160,12 +160,12 @@ registerStyleDomModule({
     }
 
     .ink-tab-group .projection-tab:hover {
-      color: black;
+      color: var(--black);
     }
 
     .ink-tab-group .projection-tab.active {
       border-bottom: 2px solid black;
-      color: black;
+      color: var(--black);
       font-weight: 500;
     }
 

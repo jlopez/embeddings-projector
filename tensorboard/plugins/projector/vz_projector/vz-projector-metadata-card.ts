@@ -23,14 +23,14 @@ class MetadataCard extends LegacyElementMixin(PolymerElement) {
   static readonly template = html`
     <style>
       #metadata-card {
-        background-color: rgba(255, 255, 255, 0.9);
-        box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14),
-          0 1px 5px 0 rgba(0, 0, 0, 0.12), 0 3px 1px -2px rgba(0, 0, 0, 0.2);
+        background-color: var(--whiteAlphaE5);
+        box-shadow: 0 2px 2px 0 var(--blackAlpha24),
+          0 1px 5px 0 var(--blackAlpha1F), 0 3px 1px -2px var(--blackAlpha33);
         width: 270px;
       }
 
       #header {
-        background: #e9e9e9;
+        background: var(--grayE9);
       }
 
       #icon-container {

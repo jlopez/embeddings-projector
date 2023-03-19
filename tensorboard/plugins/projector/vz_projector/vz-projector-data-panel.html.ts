@@ -33,7 +33,7 @@ export const template = html`
     }
 
     .dirs {
-      color: rgba(0, 0, 0, 0.7);
+      color: var(--blackAlphaB3);
       font-size: 12px;
     }
 
@@ -92,8 +92,8 @@ export const template = html`
 
     .title {
       align-items: center;
-      border-bottom: 1px solid rgba(0, 0, 0, 0.1);
-      color: black;
+      border-bottom: 1px solid var(--blackAlpha13);
+      color: var(--black);
       display: flex;
       font-weight: 500;
       height: 59px;
@@ -173,7 +173,7 @@ export const template = html`
     }
 
     .code {
-      background-color: #f7f7f7;
+      background-color: var(--grayF7);
       display: table;
       font-family: monospace;
       margin-top: 7px;
@@ -181,7 +181,7 @@ export const template = html`
     }
 
     .delimiter {
-      color: #b71c1c;
+      color: var(--fieryGarnet);
     }
 
     .button-container {
@@ -209,7 +209,7 @@ export const template = html`
     }
 
     .step-label {
-      color: rgb(38, 180, 226);
+      color: var(--royalPeacock);
     }
 
     .scrollable-container {

@@ -28,7 +28,7 @@ class ProjectorInput extends LegacyElementMixin(PolymerElement) {
     <style include="vz-projector-styles"></style>
     <style>
       .info {
-        color: rgba(0, 0, 0, 0.5);
+        color: var(--blackAlpha80);
         display: block;
         font-size: 11px;
       }
@@ -44,8 +44,8 @@ class ProjectorInput extends LegacyElementMixin(PolymerElement) {
       }
 
       .toggle[active] {
-        background-color: #880e4f;
-        color: white;
+        background-color: var(--frenchPlum);
+        color: var(--white);
       }
     </style>
 

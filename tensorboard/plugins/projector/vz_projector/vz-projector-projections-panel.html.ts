@@ -30,7 +30,7 @@ export const template = html`
         padding: 10px;
         min-width: 88px;
         flex-shrink: 0;
-        background: #e3e3e3;
+        background: var(--grayE3);
       }
 
       .ink-panel-buttons {
@@ -47,7 +47,7 @@ export const template = html`
       }
 
       .has-border {
-        border: 1px solid rgba(0, 0, 0, 0.1);
+        border: 1px solid var(--blackAlpha13);
       }
 
       .toggle {
@@ -61,8 +61,8 @@ export const template = html`
       }
 
       .toggle[active] {
-        background-color: #880e4f;
-        color: white;
+        background-color: var(--frenchPlum);
+        color: var(--white);
       }
 
       .two-columns {
@@ -103,7 +103,7 @@ export const template = html`
       }
 
       .notice {
-        color: #880e4f;
+        color: var(--frenchPlum);
       }
 
       .container {
@@ -112,7 +112,7 @@ export const template = html`
 
       .book-icon {
         height: 20px;
-        color: rgba(0, 0, 0, 0.7);
+        color: var(--blackAlphaB3);
       }
 
       .item-details {
@@ -130,13 +130,13 @@ export const template = html`
       }
 
       .dropdown-item.header {
-        border-bottom: 1px solid #aaa;
-        color: #333;
+        border-bottom: 1px solid var(--grayAA);
+        color: var(--gray33);
         font-weight: bold;
       }
 
       #total-variance {
-        color: rgba(0, 0, 0, 0.7);
+        color: var(--blackAlphaB3);
       }
     </style>
     <div id="main">

@@ -69,13 +69,13 @@ export const template = html`
         justify-content: space-between;
         min-width: 312px;
         width: 312px;
-        border-right: 1px solid rgba(0, 0, 0, 0.1);
-        background: #fafafa;
+        border-right: 1px solid var(--blackAlpha13);
+        background: var(--grayFA);
       }
 
       #right-pane {
-        border-left: 1px solid rgba(0, 0, 0, 0.1);
-        background: #fafafa;
+        border-left: 1px solid var(--blackAlpha13);
+        background: var(--grayFA);
         display: flex;
         height: 100%;
         min-width: 300px;
@@ -88,7 +88,7 @@ export const template = html`
 
       .control input[type='text']:focus {
         outline: none;
-        border-bottom: 1px solid rgba(0, 0, 0, 1);
+        border-bottom: 1px solid var(--black);
       }
 
       .control {
@@ -114,7 +114,7 @@ export const template = html`
       }
 
       #notification-dialog .progress {
-        --paper-spinner-color: #880e4f;
+        --paper-spinner-color: var(--frenchPlum);
         --paper-spinner-stroke-width: 2px;
       }
 
@@ -134,7 +134,7 @@ export const template = html`
       }
 
       .brush .extent {
-        stroke: #fff;
+        stroke: var(--white);
         fill-opacity: 0.125;
         shape-rendering: crispEdges;
       }
@@ -145,7 +145,7 @@ export const template = html`
       }
 
       .origin line {
-        stroke: black;
+        stroke: var(--black);
         stroke-opacity: 0.2;
       }
 
@@ -160,7 +160,7 @@ export const template = html`
         padding: 10px;
         min-width: 100px;
         flex-shrink: 0;
-        background: #e3e3e3;
+        background: var(--grayE3);
       }
 
       .status-bar-panel {
@@ -169,7 +169,7 @@ export const template = html`
       }
 
       .status-bar-entry {
-        border-left: 1px solid rgba(0, 0, 0, 0.5);
+        border-left: 1px solid var(--blackAlpha80);
         margin-left: 5px;
         padding-left: 5px;
       }
@@ -180,7 +180,7 @@ export const template = html`
         align-items: center;
         position: relative;
         height: 60px;
-        border-bottom: solid 1px #eee;
+        border-bottom: solid 1px var(--grayEE);
         padding: 0 24px;
         display: flex;
       }
@@ -204,9 +204,9 @@ export const template = html`
 
       .ink-fab {
         margin-left: 8px;
-        border: 1px solid rgba(0, 0, 0, 0.02);
-        background: white;
-        box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+        border: 1px solid var(--blackAlpha05);
+        background: var(--white);
+        box-shadow: 0 1px 3px var(--blackAlpha4C);
       }
 
       #metadata-card {
@@ -236,14 +236,14 @@ export const template = html`
       }
 
       #data-panel {
-        border-top: 1px solid rgba(0, 0, 0, 0.1);
+        border-top: 1px solid var(--blackAlpha13);
         overflow-y: auto;
       }
 
       #toast {
         display: flex;
         align-items: center;
-        --paper-toast-color: #eeff41;
+        --paper-toast-color: var(--offYellow);
       }
     </style>
     <paper-dialog id="notification-dialog" modal>

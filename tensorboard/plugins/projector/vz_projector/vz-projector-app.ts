@@ -30,8 +30,8 @@ class VzProjectorApp extends PolymerElement {
         justify-content: space-between;
         padding: 0 24px;
         height: 60px;
-        color: white;
-        background: #560731;
+        color: var(--white);
+        background: var(--mulberryWood);
       }
 
       #appbar .logo {
@@ -44,7 +44,7 @@ class VzProjectorApp extends PolymerElement {
       }
 
       .icons a {
-        color: white;
+        color: var(--white);
       }
 
       vz-projector {

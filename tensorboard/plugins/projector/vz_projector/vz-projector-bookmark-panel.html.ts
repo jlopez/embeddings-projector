@@ -21,8 +21,8 @@ export const template = html`
   <style include="vz-projector-styles"></style>
   <style>
     #title {
-      background-color: #fafafa;
-      color: black;
+      background-color: var(--grayFA);
+      color: var(--black);
       font-weight: 500;
       left: 0;
       line-height: 60px;
@@ -31,7 +31,7 @@ export const template = html`
       width: 276px;
     }
     #bookmark-container {
-      background-color: #fafafa;
+      background-color: var(--grayFA);
     }
     #icon-container {
       line-height: 60px;
@@ -39,11 +39,11 @@ export const template = html`
       right: 0;
     }
     #header {
-      border-top: 1px solid rgba(0, 0, 0, 0.1);
+      border-top: 1px solid var(--blackAlpha13);
       position: relative;
     }
     #panel {
-      background-color: #fafafa;
+      background-color: var(--grayFA);
       position: relative;
       overflow-y: scroll;
       top: 60px;
@@ -82,8 +82,8 @@ export const template = html`
       padding: 0 24px;
     }
     #action-buttons-container .add-icon-button {
-      background-color: #03a9f4;
-      color: white;
+      background-color: var(--democrat);
+      color: var(--white);
       margin: 0 4px 4px auto;
       right: 7px;
       top: -4px;
@@ -98,8 +98,8 @@ export const template = html`
     }
     .ink-fab {
       border-radius: 50%;
-      background: white;
-      box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+      background: var(--white);
+      box-shadow: 0 1px 3px var(--blackAlpha4C);
     }
     paper-textarea {
       --paper-input-container-input: {
