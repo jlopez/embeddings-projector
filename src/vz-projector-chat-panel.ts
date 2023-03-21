@@ -29,7 +29,7 @@ class ChatWindow extends LegacyElementMixin(PolymerElement) {
   static readonly template = html`
     <style>
       :host {
-        display: block;
+        /* display: block; */
       }
       .container {
         display: flex;
@@ -447,10 +447,13 @@ class ChatPanel extends PolymerElement {
         display: flex;
         font-weight: 500;
         height: 59px;
+        min-height: 59px;
         padding-left: 20px;
       }
       chat-window {
         flex: 1;
+        display: flex;
+        flex-direction: column;
       }
     </style>
     <div class="title">AI CHAT</div>

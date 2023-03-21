@@ -74,7 +74,9 @@ export const template = html`
       }
 
       #chat-panel {
-        height: 100%;
+        flex: 1;
+        min-height: 33%;
+        overflow: auto;
       }
 
       #right-pane {
