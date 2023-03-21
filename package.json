@@ -1,55 +1,35 @@
 {
-  "name": "tensorboard",
-  "version": "0.0.0-unused",
-  "description": "TensorFlow's embedding projector",
+  "name": "embeddings-projector",
+  "version": "1.0.0",
+  "description": "Embeddings Projector derived from TensorFlow",
   "private": true,
   "scripts": {
-    "postinstall": "patch-package",
-    "build": "bazel build //tensorboard/plugins/projector/vz_projector:standalone",
-    "test": "ibazel run //tensorboard/plugins/projector/vz_projector:standalone",
-    "lint": "prettier --check 'tensorboard/**/*.'{html,ts} .github/**/*.yml",
-    "fix-lint": "prettier --write 'tensorboard/**/*.'{html,ts} .github/**/*.yml"
+    "build": "webpack --mode=production --node-env=production",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build:dev": "webpack --mode=development",
+    "build:prod": "webpack --mode=production --node-env=production",
+    "watch": "webpack --watch",
+    "serve": "webpack serve"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/jlopez/embedding-projector.git"
-  },
-  "keywords": [
-    "ml",
-    "visualization"
-  ],
   "author": "TensorFlow authors",
-  "license": "Apache-2.0",
-  "bugs": {
-    "url": "https://github.com/tensorflow/tensorboard/issues"
-  },
-  "homepage": "https://github.com/tensorflow/tensorboard#readme",
+  "license": "ISC",
   "devDependencies": {
-    "@angular/build-tooling": "https://github.com/angular/dev-infra-private-build-tooling-builds.git#fb42478534df7d48ec23a6834fea94a776cb89a0",
-    "@angular/cli": "^14.2.9",
-    "@babel/core": "^7.16.12",
-    "@bazel/concatjs": "5.7.0",
-    "@bazel/esbuild": "5.7.0",
-    "@bazel/ibazel": "^0.15.9",
-    "@bazel/typescript": "5.7.0",
-    "@types/d3": "5.7.2",
-    "@types/jasmine": "^3.8.2",
-    "@types/lodash": "^4.14.172",
-    "@types/node": "^16.4.13",
+    "@types/d3": "^7.4.0",
+    "@types/mocha": "^10.0.1",
+    "@types/numeric": "^1.2.2",
     "@types/three": "^0.131.0",
-    "jasmine-core": "^3.8.0",
-    "karma": "^6.3.16",
-    "karma-chrome-launcher": "^3.1.0",
-    "karma-firefox-launcher": "^2.1.1",
-    "karma-jasmine": "^4.0.1",
-    "karma-requirejs": "^1.1.0",
-    "karma-sourcemap-loader": "^0.3.8",
-    "patch-package": "6.4.7",
-    "prettier": "2.4.1",
-    "prettier-plugin-organize-imports": "2.3.4",
-    "tslib": "^2.3.0",
-    "typescript": "4.8.4",
-    "yarn-deduplicate": "^5.0.0"
+    "@webpack-cli/generators": "^3.0.1",
+    "copy-webpack-plugin": "^11.0.0",
+    "css-loader": "^6.7.3",
+    "html-webpack-plugin": "^5.5.0",
+    "mini-css-extract-plugin": "^2.7.3",
+    "prettier": "^2.8.4",
+    "style-loader": "^3.3.1",
+    "ts-loader": "^9.4.2",
+    "typescript": "^4.9.5",
+    "webpack": "^5.76.2",
+    "webpack-cli": "^5.0.1",
+    "webpack-dev-server": "^4.11.1"
   },
   "dependencies": {
     "@polymer/decorators": "^3.0.0",
@@ -92,8 +72,10 @@
     "@tensorflow/tfjs-backend-webgl": "3.4.0",
     "@tensorflow/tfjs-core": "3.4.0",
     "d3": "5.7.0",
+    "date-fns": "^2.29.3",
     "lodash": "^4.17.19",
     "numeric": "^1.2.6",
+    "seedrandom": "~2.4.3",
     "three": "~0.137.0",
     "umap-js": "^1.3.2"
   }

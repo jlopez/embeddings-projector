@@ -31,18 +31,15 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v3
-      - name: Setup Bazelisk
-        uses: bazelbuild/setup-bazelisk@v2
-      - name: Mount bazel cache  # Optional
-        uses: actions/cache@v3
+      - name: Setup NPM
+        uses: actions/setup-node@v3
         with:
-          path: "~/.cache/bazel"
-          key: bazel
-      - name: Build projector tar
+          node-version: 19
+          cache: npm
+      - name: Build bundle
         run: |
-          bazel build //tensorboard/plugins/projector/vz_projector:standalone_tar
-          mkdir _site
-          tar xf "$(bazel info bazel-bin)/tensorboard/plugins/projector/vz_projector/standalone_tar.tar" -C _site
+          npm ci
+          npm run build
       - name: Setup Pages
         uses: actions/configure-pages@v3
       - name: Upload artifact
